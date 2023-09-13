@@ -1,15 +1,11 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html lang="en">
 
 <head>
-	<title>Hyperspace by HTML5 UP</title>
+	<title>Manassa Ltd. for ICT</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" href="images/logo-red.svg" sizes="any" type="image/svg+xml">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
@@ -18,10 +14,14 @@
 
 <body class="is-preload">
 
+	<!-- Dialog Container -->
+	<div id="dialogContainer" style="color: black;"></div>
+
+
 	<!-- Sidebar -->
 	<section id="sidebar">
 		<div class="inner">
-			<img src="images/logo.svg" style="padding-bottom: 25%;" alt="LOGO" data-position="top center"/>
+			<img src="images/logo-white.svg" style="padding-bottom: 25%;" alt="LOGO" data-position="top center" />
 			</svg>
 			<nav>
 				<ul>
@@ -59,9 +59,11 @@
 						<h2>Sed ipsum dolor</h2>
 						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
 							erat malesuada quis. Aliquam dapibus.</p>
+						<!-- 						
 						<ul class="actions">
 							<li><a href="generic.html" class="button">Learn more</a></li>
 						</ul>
+						 -->
 					</div>
 				</div>
 			</section>
@@ -72,9 +74,11 @@
 						<h2>Feugiat consequat</h2>
 						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
 							erat malesuada quis. Aliquam dapibus.</p>
+						<!-- 						
 						<ul class="actions">
 							<li><a href="generic.html" class="button">Learn more</a></li>
 						</ul>
+						 -->
 					</div>
 				</div>
 			</section>
@@ -85,9 +89,11 @@
 						<h2>Ultricies aliquam</h2>
 						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
 							erat malesuada quis. Aliquam dapibus.</p>
+						<!-- 						
 						<ul class="actions">
 							<li><a href="generic.html" class="button">Learn more</a></li>
 						</ul>
+						 -->
 					</div>
 				</div>
 			</section>
@@ -138,9 +144,11 @@
 							ultricies erat dapibus.</p>
 					</section>
 				</div>
+				<!-- 						
 				<ul class="actions">
 					<li><a href="generic.html" class="button">Learn more</a></li>
 				</ul>
+				-->
 			</div>
 		</section>
 
@@ -148,12 +156,12 @@
 		<section id="three" class="wrapper style1 fade-up">
 			<div class="inner">
 				<h2>Get in touch</h2>
-				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
-					malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-					imperdiet est velit quis lorem.</p>
+
+				<p>Feel free to contact us with any questions, inquiries, or feedback you may have. We are here to assist you and provide the information you need. Whether you want to discuss a potential collaboration, request more details about our products or services, or simply share your thoughts, we value your input.</p>
+				
 				<div class="split style1">
 					<section>
-						<form method="post" action="#">
+						<form id="sendMessageForm" method="post">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
@@ -169,7 +177,10 @@
 								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="" class="button submit">Send Message</a></li>
+								<li>
+									<!-- <button type="submit" class="button submit">Send Message</button> -->
+									<button type="button" class="button" onclick="submitForm()">Send Message</button>
+								</li>
 							</ul>
 						</form>
 					</section>
@@ -177,31 +188,38 @@
 						<ul class="contact">
 							<li>
 								<h3>Address</h3>
-								<span>12345 Somewhere Road #654<br />
-									Nashville, TN 00000-0000<br />
-									USA</span>
+								<span>
+									2nd Ring Road<br />
+									Tropoli<br />
+									Libya
+								</span>
 							</li>
 							<li>
 								<h3>Email</h3>
-								<a href="#">user@untitled.tld</a>
+								<a href="#">info@manassa.ly</a>
 							</li>
 							<li>
 								<h3>Phone</h3>
-								<span>(000) 000-0000</span>
+								<span>+218 91 021 52 72</span>
 							</li>
 							<li>
 								<h3>Social</h3>
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span
-												class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span
-												class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a>
-									</li>
-									<li><a href="#" class="icon brands fa-instagram"><span
-												class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-linkedin-in"><span
-												class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon brands fa-twitter" target="_blank">
+											<span class="label">Twitter</span>
+									</a></li>
+									<li><a href="https://facebook.com/manassa.ly" class="icon brands fa-facebook-f" target="_blank">
+										<span class="label">Facebook</span>
+									</a></li>
+									<li><a href="https://github.com/Manassa-Ltd" class="icon brands fa-github"  target="_blank">
+										<span class="label">GitHub</span>
+									</a></li>
+									<li><a href="https://instagram.com/manassa.ly" class="icon brands fa-instagram"  target="_blank">
+										<span class="label">Instagram</span>
+									</a></li>
+									<li><a href="#" class="icon brands fa-linkedin-in" target="_blank">
+										<span class="label">LinkedIn</span>
+									</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -228,6 +246,7 @@
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/send_email.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 
