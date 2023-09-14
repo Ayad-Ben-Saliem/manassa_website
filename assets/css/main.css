@@ -7,9 +7,6 @@
 */
 
 :root {
-	--white: #ffffff;
-
-
 	--primary: #312450;
 	--style1-wrapper: #5e42a6;
 	--style1-wrapper-alt: #493382;
@@ -22,27 +19,15 @@
 	--sidebar-bg: #3c2c62;
 
 	--primary: #441010;
-	--style1-wrapper: #a64242;
-	--style1-wrapper-alt: #823333;
-	--style2-wrapper: #b55050;
-	--style2-wrapper-alt: #943e3e;
+	--style1-wrapper: #8f3939;
+	--style1-wrapper-alt: #6b2a2a;
+	--style2-wrapper: #ce5b5b;
+	--style2-wrapper-alt: #ad4949;
 	--style3-wrapper: #b74e4e;
 	--style3-wrapper-alt: #953d3d;
 
 	--wrapper-bg: #3e1c1c;
 	--sidebar-bg: #622c2c;
-
-
-	/* --primary: #cd4444;
-	--style1-wrapper: #ff8080;
-	--style1-wrapper-alt: #ef5555;
-	--style2-wrapper: #ef7070;
-	--style2-wrapper-alt: #ef3030;
-	--style3-wrapper: #ef5555;
-	--style3-wrapper-alt: #953d3d;
-
-	--wrapper-bg: #3e1c1c;
-	--sidebar-bg: #622c2c; */
 }
 
 #dialogContainer {
@@ -51,12 +36,28 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: #fff;
+	color: white;
+	background-color: var(--primary);
+	border-radius: 1em;
 	padding: 20px;
 	border: 1px solid #ccc;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	z-index: 9999;
 }
+
+#messageContainer {
+	position: realtive;
+	padding: 1em 0;
+	margin: 0;
+	text-align: center;
+}
+
+#dialogContainer button {
+	display: block;
+	width: 100%;
+
+}
+
 
 html,
 body,
@@ -315,12 +316,12 @@ a {
 
 a:hover {
 	border-bottom-color: transparent;
-	color: var(--white);
+	color: white;
 }
 
 strong,
 b {
-	color: var(--white);
+	color: white;
 	font-weight: bold;
 }
 
@@ -339,7 +340,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--white);
+	color: white;
 	font-weight: bold;
 	line-height: 1.5;
 	margin: 0 0 0.5em 0;
@@ -2004,7 +2005,7 @@ button,
 	border: solid 1px !important;
 	border-color: rgba(255, 255, 255, 0.15) !important;
 	border-radius: 3em;
-	color: var(--white) !important;
+	color: white !important;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 0.6em;
@@ -2035,7 +2036,7 @@ button:after,
 	-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
 	-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
 	transition: opacity 0.2s ease, transform 0.2s ease;
-	background: var(--white);
+	background: white;
 	border-radius: 3em;
 	content: '';
 	height: 100%;
@@ -2083,7 +2084,7 @@ input[type="reset"].primary,
 input[type="button"].primary,
 button.primary,
 .button.primary {
-	background-color: var(--white);
+	background-color: white;
 	color: var(--primary) !important;
 }
 
@@ -2135,7 +2136,7 @@ input[type="reset"]:hover:active,
 input[type="button"]:hover:active,
 button:hover:active,
 .button:hover:active {
-	border-color: var(--white) !important;
+	border-color: white !important;
 }
 
 input[type="submit"]:hover:active:after,
@@ -2465,7 +2466,7 @@ form>.fields>.field.quarter {
 }
 
 label {
-	color: var(--white);
+	color: white;
 	font-weight: bold;
 	line-height: 1.5;
 	margin: 0 0 0.7em 0;
@@ -2510,7 +2511,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-	border-color: var(--white);
+	border-color: white;
 	box-shadow: 0 0 0 1px #ffffff;
 }
 
@@ -2525,7 +2526,7 @@ select {
 }
 
 select option {
-	color: var(--white);
+	color: white;
 	background: var(--primary);
 }
 
@@ -2612,15 +2613,15 @@ input[type="radio"]+label:before {
 
 input[type="checkbox"]:checked+label:before,
 input[type="radio"]:checked+label:before {
-	background: var(--white);
-	border-color: var(--white);
+	background: white;
+	border-color: white;
 	color: var(--style3-wrapper);
 	content: '\f00c';
 }
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
-	border-color: var(--white);
+	border-color: white;
 	box-shadow: 0 0 0 1px #ffffff;
 }
 
@@ -2693,7 +2694,7 @@ input[type="radio"]+label:before {
 	width: 2.5em;
 	height: 2.5em;
 	display: block;
-	background: var(--white);
+	background: white;
 	border-radius: 100%;
 	color: var(--primary);
 	text-align: center;
@@ -3224,6 +3225,7 @@ body.is-ie .spotlights>section {
 	justify-content: center;
 	width: 50em;
 	-ms-flex: 1;
+	flex: 1;
 }
 
 .spotlights>section>.content>.inner {
@@ -3244,6 +3246,10 @@ body.is-ie .spotlights>section {
 
 .spotlights>section:nth-child(3) {
 	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.spotlights>section:nth-child(4) {
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .spotlights>section.inactive>.image:before,
@@ -3333,7 +3339,7 @@ table td {
 }
 
 table th {
-	color: var(--white);
+	color: white;
 	font-size: 1em;
 	font-weight: bold;
 	padding: 0 0.75em 0.75em 0.75em;
@@ -3552,7 +3558,7 @@ body.is-preload .wrapper.fade>.inner {
 
 #header>.title {
 	border: 0;
-	color: var(--white);
+	color: white;
 	display: block;
 	font-size: 1.25em;
 	font-weight: bold;
@@ -3597,7 +3603,7 @@ body.is-preload .wrapper.fade>.inner {
 }
 
 #header>nav>ul>li a.active {
-	color: var(--white);
+	color: white;
 }
 
 @media screen and (max-width: 736px) {
@@ -3957,7 +3963,7 @@ body.is-ie #sidebar>.inner {
 }
 
 #sidebar nav a.active {
-	color: var(--white);
+	color: white;
 }
 
 #sidebar nav a.active:after {

@@ -15,7 +15,12 @@
 <body class="is-preload">
 
 	<!-- Dialog Container -->
-	<div id="dialogContainer" style="color: black;"></div>
+	<div id="dialogContainer">
+		<div id="messageContainer">
+			<p id="messageParagraph"></p>
+		</div>
+		<button type="button" class="button" onclick="dismissDialog()">OK</button>
+	</div>
 
 
 	<!-- Sidebar -->
@@ -26,8 +31,8 @@
 			<nav>
 				<ul>
 					<li><a href="#intro">Welcome</a></li>
-					<li><a href="#one">Who we are</a></li>
-					<li><a href="#two">What we do</a></li>
+					<li><a href="#one">What we do?</a></li>
+					<li><a href="#two">Our works</a></li>
 					<li><a href="#three">Get in touch</a></li>
 				</ul>
 			</nav>
@@ -40,108 +45,99 @@
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<h1>Hyperspace</h1>
-				<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5
-						UP</a><br />
-					and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+				<h1>
+					<span style="font-size: 64pt;">M</span>ANASSA
+				</h1>
+				<!-- <h2 style="display:inline">ANASSA</h2> -->
+				<p>
+					Welcome to Manassa, your premier destination for cutting-edge ICT solutions. We specialize in
+					streamlining operations and enhancing productivity through our wide range of innovative products and
+					services.
+					</br></br>
+					Trust us to provide you the best solutions that drive success and propel your business
+					into the future.
+				</p>
 				<ul class="actions">
 					<li><a href="#one" class="button scrolly">Learn more</a></li>
 				</ul>
 			</div>
 		</section>
 
-		<!-- One -->
-		<section id="one" class="wrapper style2 spotlights">
-			<section>
-				<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Sed ipsum dolor</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
-							erat malesuada quis. Aliquam dapibus.</p>
-						<!-- 						
-						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
-						</ul>
-						 -->
-					</div>
-				</div>
-			</section>
-			<section>
-				<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Feugiat consequat</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
-							erat malesuada quis. Aliquam dapibus.</p>
-						<!-- 						
-						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
-						</ul>
-						 -->
-					</div>
-				</div>
-			</section>
-			<section>
-				<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Ultricies aliquam</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
-							erat malesuada quis. Aliquam dapibus.</p>
-						<!-- 						
-						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
-						</ul>
-						 -->
-					</div>
-				</div>
-			</section>
-		</section>
 
 		<!-- Two -->
-		<section id="two" class="wrapper style3 fade-up">
+		<section id="one" class="wrapper style3 fade-up">
 			<div class="inner">
-				<h2>What we do</h2>
-				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
-					malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-					imperdiet est velit quis lorem.</p>
+				<h2>WHAT WE DO?</h2>
+				<p>
+					At Manassa, we are dedicated to improving business and personal security through our comprehensive
+					range of products and services. From advanced ERP and POS solutions to custom software development,
+					we offer tailored solutions to meet your unique needs.
+					</br>
+					Our expert teams excel in network system installation, implementing state-of-the-art CCTV camera
+					systems, and integrating fire alarm and extinguishing systems to ensure optimal security.
+					</br>
+					Furthermore, we provide top-notch consultations and training services in the ICT field, equipping
+					individuals and organizations with the skills and knowledge they need to thrive in the digital
+					landscape.
+				</p>
 				<div class="features">
 					<section>
-						<span class="icon solid major fa-code"></span>
-						<h3>Lorem ipsum amet</h3>
-						<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
-							ultricies erat dapibus.</p>
+						<span class="icon solid major fas fa-code"></span>
+						<h3>Programming</h3>
+						<p>
+							We offer software development for wide range of applications starting from web, mobile, and
+							desktop, to IoT, and embeded applications. We provide tailored solutions to meet the unique
+							needs of our clients.
+						</p>
 					</section>
 					<section>
-						<span class="icon solid major fa-lock"></span>
-						<h3>Aliquam sed nullam</h3>
-						<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
-							ultricies erat dapibus.</p>
+						<span class="icon solid major fas fa-business-time"></span>
+						<h3>ERP</h3>
+						<p>
+							We provide ERP implementation, support, and hosting services for top-notch systems like
+							<a href="https://erpnext.com" target="_blank">ERPNext</a> and
+							<a href="https://odoo.com" target="_blank">Odoo</a>.
+							Streamline your business processes and optimize efficiency with our comprehensive ERP
+							solutions.
+						</p>
 					</section>
 					<section>
-						<span class="icon solid major fa-cog"></span>
-						<h3>Sed erat ullam corper</h3>
-						<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
-							ultricies erat dapibus.</p>
+						<span class="icon solid major fas fa-desktop"></span>
+						<h3>Sales Systems & POS</h3>
+						<p>
+							We provide set of POS and sales management systems for various industries such as
+							restaurants, cafes, and retail shops, accompanied by professional support to ensuring that
+							our clients receive the highest level of assistance and expertise.
+						</p>
+					</section>
+
+					<section>
+						<span class="icon solid major fas fa-network-wired"></span>
+						<h3>Networking</h3>
+						<p>
+							Our expert teams are proficient in designing, implementing, and installing extensive network
+							systems, encompassing in-site networking, VPN, MAN, Telecom, and more.
+						</p>
 					</section>
 					<section>
-						<span class="icon solid major fa-desktop"></span>
-						<h3>Veroeros quis lorem</h3>
-						<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
-							ultricies erat dapibus.</p>
+						<span class="icon solid major fas fa-shield-alt"></span>
+						<h3>Security & CCTV Systems</h3>
+						<p>
+							We offer design and installation for set of security systems, including CCTV cameras, alarm
+							systems, and fire extinguishing solutions. We are officially retilers for respected brands
+							like
+							<a href="https://www.dahuasecurity.com" target="_blank">Dahua</a> and
+							<a href="https://www.hikvision.com" target="_blank">Hikvision</a>.
+						</p>
 					</section>
 					<section>
-						<span class="icon solid major fa-link"></span>
-						<h3>Urna quis bibendum</h3>
-						<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
-							ultricies erat dapibus.</p>
-					</section>
-					<section>
-						<span class="icon major fa-gem"></span>
-						<h3>Aliquam urna dapibus</h3>
-						<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
-							ultricies erat dapibus.</p>
+						<span class="icon solid major fas fa-chalkboard-teacher"></span>
+						<h3>Consultation & Training</h3>
+						<p>
+							In order to help others achieve their goals and drive success, we are offering an expert
+							guidance and customized training programs to empower them with the knowledge and skills
+							needed in ICT field.
+						</p>
 					</section>
 				</div>
 				<!-- 						
@@ -152,13 +148,90 @@
 			</div>
 		</section>
 
+		<!-- One -->
+		<section id="two" class="wrapper style2 spotlights">
+			<section>
+				<div class="content">
+					<h2>OUR WORKS</h2>
+					<p>
+						Here we showcase a curated selection of our notable projects and successful implementations.
+						Explore this collection to witness firsthand the diverse range of solutions we have delivered to
+						our valued clients. Get inspired by our portfolio and discover how we can transform your
+						business with our expertise and tailored solutions.
+					</p>
+					<!-- <ul class="actions">
+						<li><a class="button" href="#" target="_blank">Learn more</a></li>
+					</ul> -->
+				</div>
+			</section>
+			<section>
+				<a href="http://arabeia.web.app" class="image" target="_blank">
+					<img src="images/arabia-logo.jpg" alt="Arabiya" data-position="center center" />
+				</a>
+				<div class="content">
+					<div class="inner">
+						<h2>Programming</h2>
+						<p>
+							Arabiya, one of our valued clients, specializes in retailing traditional Libyan clothing. We
+							had the privilege of designing and developing their website, showcasing their exquisite
+							collection to a wider audience.
+						</p>
+						<ul class="actions">
+							<li><a class="button" href="http://arabeia.web.app" target="_blank">Arabiya Website</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/networking.jpg" alt="" data-position="top center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Networking</h2>
+						<p>
+							We equipped the Libyan Ministry of Foreign Affairs and International Cooperation
+							headquarters with an advanced surveillance system for heightened security. Additionally, we
+							installed a highly reliable local network and in-building telecom system to ensure seamless
+							communication capabilities.
+						</p>
+						<!-- 						
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn more</a></li>
+						</ul>
+						 -->
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/training.jpg" alt="" data-position="25% 25%" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Training</h2>
+						<p>
+							As part of our core services, we have successfully deployed ERP & POS systems for a wide
+							range of clients. Our dedicated team has also provided comprehensive technical training and
+							support to 1,000+ clients, ensuring their smooth adoption and optimal utilization of these
+							systems.
+						</p>
+						<!-- 						
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn more</a></li>
+						</ul>
+						 -->
+					</div>
+				</div>
+			</section>
+		</section>
+
 		<!-- Three -->
 		<section id="three" class="wrapper style1 fade-up">
 			<div class="inner">
 				<h2>Get in touch</h2>
 
-				<p>Feel free to contact us with any questions, inquiries, or feedback you may have. We are here to assist you and provide the information you need. Whether you want to discuss a potential collaboration, request more details about our products or services, or simply share your thoughts, we value your input.</p>
-				
+				<p>Feel free to contact us with any questions, inquiries, or feedback you may have. We are here to
+					assist you and provide the information you need. Whether you want to discuss a potential
+					collaboration, request more details about our products or services, or simply share your thoughts,
+					we value your input.</p>
+
 				<div class="split style1">
 					<section>
 						<form id="sendMessageForm" method="post">
@@ -207,19 +280,22 @@
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter" target="_blank">
 											<span class="label">Twitter</span>
-									</a></li>
-									<li><a href="https://facebook.com/manassa.ly" class="icon brands fa-facebook-f" target="_blank">
-										<span class="label">Facebook</span>
-									</a></li>
-									<li><a href="https://github.com/Manassa-Ltd" class="icon brands fa-github"  target="_blank">
-										<span class="label">GitHub</span>
-									</a></li>
-									<li><a href="https://instagram.com/manassa.ly" class="icon brands fa-instagram"  target="_blank">
-										<span class="label">Instagram</span>
-									</a></li>
+										</a></li>
+									<li><a href="https://facebook.com/manassa.ly" class="icon brands fa-facebook-f"
+											target="_blank">
+											<span class="label">Facebook</span>
+										</a></li>
+									<li><a href="https://github.com/Manassa-Ltd" class="icon brands fa-github"
+											target="_blank">
+											<span class="label">GitHub</span>
+										</a></li>
+									<li><a href="https://instagram.com/manassa.ly" class="icon brands fa-instagram"
+											target="_blank">
+											<span class="label">Instagram</span>
+										</a></li>
 									<li><a href="#" class="icon brands fa-linkedin-in" target="_blank">
-										<span class="label">LinkedIn</span>
-									</a></li>
+											<span class="label">LinkedIn</span>
+										</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -234,8 +310,7 @@
 	<footer id="footer" class="wrapper style1-alt">
 		<div class="inner">
 			<ul class="menu">
-				<li>&copy; Untitled. All rights reserved.</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				<li>Copyright &copy; 2023 Manassa Ltd. All rights reserved.</li>
 			</ul>
 		</div>
 	</footer>
